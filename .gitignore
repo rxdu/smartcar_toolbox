@@ -1,3 +1,10 @@
+# Generated files
+build
+code/comm/lcmtypes/c
+code/comm/lcmtypes/cpp
+code/comm/lcmtypes/java
+code/comm/lcmtypes/python
+
 # Compiled Object files
 *.slo
 *.lo
