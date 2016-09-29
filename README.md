@@ -56,7 +56,7 @@ $ mkdir build
 $ cd build
 $ cmake -G"Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug ../code
 ```
-Eclipse工程文件会生成在build目录下，在Eclipse里从该目录导入已有工程既可以查看编译代码。
+Eclipse工程文件会生成在build目录下，在Eclipse里从该目录导入已有工程即可以查看编译代码。
 
 ## 4. 运行小车仿真
 
