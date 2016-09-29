@@ -1,6 +1,15 @@
 # 智能车工具箱 Smartcar Toolbox
 
-## 开发环境
+## 1. 开源协议
+
+本工具箱相关代码（依赖库除外）遵循GPLv3开源协议。工具箱所依赖的开源库相关协议参照code/libraries目录下各库所附代的说明文件。
+
+The Smartcar Toolbox is released under the **GPLv3** license. Refer to "LICENSE" file in the root directory for more details.
+
+Dependent libraries found in the **code/libraries** directory are distributed under open source (or open source-like) licenses/agreements. Appropriate license agreements for each library can be found in the **code/libraries** directory.
+
+
+## 2. 开发环境
 
 * Ubuntu 14.04 64-bit
 * gcc >= 4.8.4
@@ -23,7 +32,7 @@ $ sudo apt-get install cmake
 $ sudo apt-get install git
 ```
 
-## 代码编译
+## 3. 代码编译
 
 为方便默认使用～/Workspace/smartcar_toolbox目录存放本项目repository文件。依个人偏好修改。默认编译输出目录：
 
@@ -54,15 +63,7 @@ $ cmake -G"Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug ../code
 ```
 Eclipse工程文件会生成在build目录下，在Eclipse里从该目录导入已有工程既可以查看编译代码。
 
-## 运行小车仿真
+## 4. 运行小车仿真
 
-* 打开V-REP， 载入vrep_scenes/rc_car_model_c_with_straight_track.ttt，启动仿真
+* 打开V-REP， 载入sim_scenes/rc_car_model_c_with_straight_track.ttt，启动仿真
 * 运行build/bin/carsim_demo (通过Terminal或Eclipse)
-
-## License
-
-本工具箱相关代码（依赖库除外）遵循GPLv3开源协议。工具箱所依赖的开源库相关协议参照code/libraries目录下各库所附代的说明文件。
-
-The Smartcar Toolbox is released under the GPLv3 license. Refer to "LICENSE" file in the root directory for more details.
-
-Dependent libraries found in the **code/libraries** directory are distributed under open source (or open source-like) licenses/agreements. Appropriate license agreements for each library can be found in the **code/libraries** directory.
