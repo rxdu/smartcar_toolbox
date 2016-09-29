@@ -2,12 +2,7 @@
 
 ## 1. 开源协议
 
-本工具箱相关代码（依赖库除外）遵循GPLv3开源协议。工具箱所依赖的开源库相关协议参照code/libraries目录下各库所附代的说明文件。
-
-The Smartcar Toolbox is released under the **GPLv3** license. Refer to "LICENSE" file in the root directory for more details.
-
-Dependent libraries found in the **code/libraries** directory are distributed under open source (or open source-like) licenses/agreements. Appropriate license agreements for each library can be found in the **code/libraries** directory.
-
+本工具箱相关代码（依赖库除外）遵循**GPLv3**开源协议。工具箱所依赖的开源库相关协议参照code/libraries目录下各库所附代的说明文件。
 
 ## 2. 开发环境
 
