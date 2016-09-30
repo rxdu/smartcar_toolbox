@@ -1,6 +1,6 @@
 # 智能车工具箱 Smartcar Toolbox
 
-<img src="/docs/img/car_model_c.png" align="right" height="256" >
+<img src="/docs/img/car_model_c.png" align="right" height="168" >
 
 
 ## 1. 开源协议
@@ -24,7 +24,7 @@
 * Logging功能依赖于[g3log](https://github.com/KjellKod/g3log)，编译及使用参照其所提供的文档， 在code/CMakeLists.txt里将ENABLE_G3LOG变量设置为on以启用此功能
 * Unit Test依赖于[googletest](https://github.com/google/googletest)，如需编译或添加测试代码，在code/CMakeLists.txt里将BUILD_TESTS变量设置为on以启用此功能
 
-注： 本工具箱所有代码及所依赖的库均支持多平台，但默认在Ubuntu操作系统下开发和测试，相关文档也默认使用环境为Ubuntu。参照本文档应该可以在Windows及MacOS下编译和运行相关代码。
+注： 本工具箱所有代码及所依赖的库均支持多平台，因为默认在Ubuntu操作系统下开发和测试，所以相关文档也默认使用环境为Ubuntu。参照本文档应该可以在Windows及MacOS下编译和运行相关代码。
 
 **安装编译工具(Ubuntu)**:
 ```
