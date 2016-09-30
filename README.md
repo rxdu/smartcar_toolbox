@@ -1,12 +1,13 @@
 # 智能车工具箱 Smartcar Toolbox
 
-![](/docs/img/car_model_c.png)
+<img src="/docs/img/car_model_c.png" align="right" height="256" >
+
 
 ## 1. 开源协议
 
 * 本工具箱相关代码（依赖库除外）遵循**GPLv3**开源协议。工具箱所依赖的开源库相关协议参照code/libraries目录下各库所附代的说明文件。
 
-* C车模VREP仿真基于“天翊”在智能车制作论坛提供的CAD模型制作(http://www.znczz.com/forum.php?mod=viewthread&tid=237102)
+* C车模VREP仿真基于“天翊”在智能车制作论坛提供的[CAD模型](http://www.znczz.com/forum.php?mod=viewthread&tid=237102)制作
 
 
 ## 2. 开发环境
