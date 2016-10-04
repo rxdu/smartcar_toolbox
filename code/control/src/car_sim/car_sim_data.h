@@ -27,12 +27,10 @@
 #define CONTROL_SRC_CAR_SIM_CAR_SIM_DATA_H_
 
 #include "common/control_types.h"
+#include "car_sim/car_sim_config.h"
 #include "car_ctrl/controller/car_types.h"
 
 namespace smartcar {
-
-#define IMG_RES_X 160
-#define IMG_RES_Y 90
 
 typedef struct
 {

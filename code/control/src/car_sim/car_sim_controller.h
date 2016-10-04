@@ -28,6 +28,13 @@
 
 #include <memory>
 
+// headers for g3log
+#ifdef ENABLE_LOG
+#include "g3log/g3log.hpp"
+#include "g3log/logworker.hpp"
+#include "g3log/std2_make_unique.hpp"
+#endif
+
 #include "vrep_sim/vrep_interface/robot_sim_controller.h"
 #include "car_sim/car_sim_data.h"
 #include "car_ctrl/controller/car_types.h"

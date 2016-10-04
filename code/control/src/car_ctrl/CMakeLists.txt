@@ -9,6 +9,7 @@ set(CARCON_LIB_SRC
     # state estimator
     estimator/car_state.cpp
     # controller
+    controller/kin_openloop_con.cpp
 )
 add_library(car_ctrl STATIC ${CARCON_LIB_SRC})
 if (ENABLE_G3LOG)

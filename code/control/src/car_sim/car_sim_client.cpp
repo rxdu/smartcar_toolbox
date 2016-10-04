@@ -24,7 +24,9 @@
  */
 
 #include <iostream>
+#include <cmath>
 #include "car_sim/car_sim_client.h"
+#include "car_sim/car_sim_config.h"
 
 using namespace smartcar;
 
@@ -128,14 +130,14 @@ bool CarSimClient::GetVisionImage(simxUChar img[IMG_RES_Y][IMG_RES_X])
 void CarSimClient::SetCarDrivingVel(float rcmd, float lcmd)
 {
 	// add limits to speed
-	if(rcmd >= 100)
-		rcmd = 100;
-	if(rcmd <= -100)
-		rcmd = -100;
-	if(lcmd >= 100)
-		lcmd = 100;
-	if(lcmd <= -100)
-		lcmd = -100;
+	if(rcmd > max_drive_speed)
+		rcmd = max_drive_speed;
+	if(rcmd < -max_drive_speed)
+		rcmd = -max_drive_speed;
+	if(lcmd > max_drive_speed)
+		lcmd = max_drive_speed;
+	if(lcmd < -max_drive_speed)
+		lcmd = -max_drive_speed;
 
 	// front wheel driving is disabled
 //	simxSetJointTargetVelocity(client_id_,driving_front_right_,cmd,simx_opmode_oneshot);
@@ -148,8 +150,15 @@ void CarSimClient::SetCarDrivingVel(float rcmd, float lcmd)
 
 void CarSimClient::SetCarSteeringAngle(float cmd)
 {
-	simxSetJointTargetPosition(client_id_,steering_right_,cmd,simx_opmode_oneshot);
-	simxSetJointTargetPosition(client_id_,steering_left_,cmd,simx_opmode_oneshot);
+	double cmd_radian = cmd / 180.0 * M_PI;
+
+	if(cmd_radian > max_steer_angle)
+		cmd_radian = max_steer_angle;
+	if(cmd_radian < -max_steer_angle)
+		cmd_radian = -max_steer_angle;
+
+	simxSetJointTargetPosition(client_id_,steering_right_,cmd_radian,simx_opmode_oneshot);
+	simxSetJointTargetPosition(client_id_,steering_left_,cmd_radian,simx_opmode_oneshot);
 }
 
 void CarSimClient::SetCarSteeringVelocity(float cmd)
