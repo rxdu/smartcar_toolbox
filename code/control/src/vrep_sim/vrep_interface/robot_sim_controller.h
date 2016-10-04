@@ -35,7 +35,7 @@
 
 #include <cstdint>
 
-namespace srcl_ctrl
+namespace smartcar
 {
 
 template<typename DataFromSimType, typename DataToSimType, typename RobotStateType, typename RobotCmdType>

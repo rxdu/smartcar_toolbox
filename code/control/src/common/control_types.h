@@ -29,7 +29,7 @@
 #include <cstdint>
 #include <vector>
 
-namespace srcl_ctrl{
+namespace smartcar{
 
 typedef struct
 {

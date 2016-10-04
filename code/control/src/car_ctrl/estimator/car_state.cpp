@@ -28,7 +28,7 @@
 
 #include "car_ctrl/estimator/car_state.h"
 
-using namespace srcl_ctrl;
+using namespace smartcar;
 
 CarState::CarState(void):
 		driving_velocity_(0)

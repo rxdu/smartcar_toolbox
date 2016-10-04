@@ -29,7 +29,7 @@
 #include <cstdint>
 #include "car_sim/car_sim_data.h"
 
-namespace srcl_ctrl
+namespace smartcar
 {
 class CarState
 {

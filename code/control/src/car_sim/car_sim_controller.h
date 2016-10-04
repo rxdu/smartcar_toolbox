@@ -33,7 +33,7 @@
 #include "car_ctrl/controller/car_types.h"
 #include "car_ctrl/estimator/car_state.h"
 
-namespace srcl_ctrl {
+namespace smartcar {
 
 class CarSimController : public RobotSimController<DataFromSimCar, DataToSimCar,CarState, CarCmd>
 {

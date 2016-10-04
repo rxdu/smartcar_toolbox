@@ -37,7 +37,7 @@ extern "C" {
 #include "car_sim/car_sim_data.h"
 #include "vrep_sim/vrep_interface/robot_sim_client.h"
 
-namespace srcl_ctrl {
+namespace smartcar {
 
 class CarSimClient : public RobotSimClient<DataFromSimCar, DataToSimCar>
 {

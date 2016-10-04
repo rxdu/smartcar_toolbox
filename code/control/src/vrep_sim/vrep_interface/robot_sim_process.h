@@ -39,7 +39,7 @@ extern "C" {
 #include "vrep_sim/vrep_interface/robot_sim_client.h"
 #include "vrep_sim/vrep_interface/robot_sim_controller.h"
 
-namespace srcl_ctrl {
+namespace smartcar {
 
 template<typename DataFromSimType, typename DataToSimType, typename RobotStateType, typename RobotCmdType>
 class RobotSimProcess

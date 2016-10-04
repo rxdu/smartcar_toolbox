@@ -31,7 +31,7 @@ extern "C" {
 /*	#include "extApiCustom.h" // custom remote API functions */
 }
 
-namespace srcl_ctrl
+namespace smartcar
 {
 
 template<typename DataFromSimType, typename DataToSimType>

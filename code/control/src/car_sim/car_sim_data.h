@@ -29,7 +29,7 @@
 #include "common/control_types.h"
 #include "car_ctrl/controller/car_types.h"
 
-namespace srcl_ctrl {
+namespace smartcar {
 
 #define IMG_RES_X 160
 #define IMG_RES_Y 90

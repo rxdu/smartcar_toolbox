@@ -29,7 +29,7 @@
 #include <string>
 #include <sstream>
 
-namespace srcl_ctrl {
+namespace smartcar {
 
 class UtilsLog {
 public:

@@ -25,7 +25,7 @@
 
 #include "ctrl_utils/logging/utils_log.h"
 
-using namespace srcl_ctrl;
+using namespace smartcar;
 
 std::string UtilsLog::log_entry = "";
 

@@ -25,7 +25,7 @@
 
 #include "car_sim/car_sim_controller.h"
 
-using namespace srcl_ctrl;
+using namespace smartcar;
 
 CarSimController::CarSimController()
 {

@@ -31,7 +31,7 @@
 #include "car_sim/car_sim_controller.h"
 #include "vrep_sim/vrep_interface/robot_sim_process.h"
 
-using namespace srcl_ctrl;
+using namespace smartcar;
 
 int main(int arc, char* argv[])
 {

@@ -31,7 +31,7 @@
 
 #include <common/control_types.h>
 
-namespace srcl_ctrl
+namespace smartcar
 {
 
 typedef struct

@@ -26,7 +26,7 @@
 #include <iostream>
 #include "car_sim/car_sim_client.h"
 
-using namespace srcl_ctrl;
+using namespace smartcar;
 
 CarSimClient::CarSimClient():
 		RobotSimClient<DataFromSimCar, DataToSimCar>()
