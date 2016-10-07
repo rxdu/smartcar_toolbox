@@ -31,6 +31,13 @@ CarSimController::CarSimController()
 {
 #ifdef ENABLE_G3LOG
 	logging_helper_ = std::make_shared<LoggingHelper>("car_sim", "/home/rdu/Workspace/smartcar_toolbox/code/control/log/car");
+	logging_helper_->AddItemNameToEntryHead("pos_x");
+	logging_helper_->AddItemNameToEntryHead("pos_y");
+	logging_helper_->AddItemNameToEntryHead("heading");
+	logging_helper_->AddItemNameToEntryHead("pos_d_x");
+	logging_helper_->AddItemNameToEntryHead("pos_d_y");
+	logging_helper_->AddItemNameToEntryHead("heading_d");
+	logging_helper_->PassEntryHeaderToLogger();
 #endif
 }
 
