@@ -1,4 +1,4 @@
-# Change Made By Ruixiang Du
+# Change For SRCL
 
 The following changes are made for easier data processing in Matlab.
 

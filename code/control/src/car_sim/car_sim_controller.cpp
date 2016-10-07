@@ -29,7 +29,9 @@ using namespace smartcar;
 
 CarSimController::CarSimController()
 {
-
+#ifdef ENABLE_G3LOG
+	logging_helper_ = std::make_shared<LoggingHelper>("car_sim", "/home/rdu/Workspace/smartcar_toolbox/code/control/log/car");
+#endif
 }
 
 CarSimController::~CarSimController()

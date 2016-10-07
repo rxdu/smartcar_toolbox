@@ -19,7 +19,9 @@ endif()
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 ## Add sub source directories
-add_subdirectory(src/ctrl_utils)
+if(ENABLE_LOGGING)
+add_subdirectory(src/logging)
+endif(ENABLE_LOGGING)
 add_subdirectory(src/vrep_sim)
 add_subdirectory(src/car_sim)
 add_subdirectory(src/car_ctrl)

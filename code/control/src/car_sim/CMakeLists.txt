@@ -12,10 +12,11 @@ set(CARSIM_LIB_SRC
     car_sim_controller.cpp
 )
 add_library(carsim STATIC ${CARSIM_LIB_SRC})
-if (ENABLE_G3LOG)
-	add_definitions(-DNON_MATLAB_PARSING -DMAX_EXT_API_CONNECTIONS=255 -DENABLE_LOG)
-else (ENABLE_G3LOG)
+if (ENABLE_LOGGING)
+	add_definitions(-DNON_MATLAB_PARSING -DMAX_EXT_API_CONNECTIONS=255 -DENABLE_G3LOG)
+	target_link_libraries(carsim vrep_sim car_ctrl logging ${LCM_LIBRARIES})
+else (ENABLE_LOGGING)
 	add_definitions(-DNON_MATLAB_PARSING -DMAX_EXT_API_CONNECTIONS=255)
-endif (ENABLE_G3LOG)
-target_link_libraries(carsim vrep_sim ${LCM_LIBRARIES})
+	target_link_libraries(carsim vrep_sim car_ctrl ${LCM_LIBRARIES})
+endif (ENABLE_LOGGING)
 

@@ -29,10 +29,11 @@
 #include <memory>
 
 // headers for g3log
-#ifdef ENABLE_LOG
+#ifdef ENABLE_G3LOG
 #include "g3log/g3log.hpp"
 #include "g3log/logworker.hpp"
 #include "g3log/std2_make_unique.hpp"
+#include "logging/logging_helper.h"
 #endif
 
 #include "vrep_sim/vrep_interface/robot_sim_controller.h"
@@ -47,6 +48,11 @@ class CarSimController : public RobotSimController<DataFromSimCar, DataToSimCar,
 public:
 	CarSimController();
 	~CarSimController();
+
+private:
+#ifdef ENABLE_G3LOG
+	std::shared_ptr<LoggingHelper> logging_helper_;
+#endif
 
 public:
 	virtual DataToSimCar ConvertRobotCmdToSimCmd(const CarCmd& cmd);
