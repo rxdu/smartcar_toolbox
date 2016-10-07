@@ -26,13 +26,6 @@
 #ifndef CONTROL_SRC_VREP_SIM_VREP_INTERFACE_ROBOT_SIM_CONTROLLER_H_
 #define CONTROL_SRC_VREP_SIM_VREP_INTERFACE_ROBOT_SIM_CONTROLLER_H_
 
-//extern "C" {
-//    #include "extApi.h"
-///*	#include "extApiCustom.h" // custom remote API functions */
-//}
-//
-//#include "common/robot_state_base.h"
-
 #include <cstdint>
 
 namespace smartcar
