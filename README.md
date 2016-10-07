@@ -22,9 +22,10 @@
 * The core functions (simulation/control) of this toolbox are self-contained inside this repository. The default CMake configurations only generate core functions to maintain minimal dependency.
 * Eigen is a header-only library for linear algebra. There should be no external dependency associated with this library.
 * Logging function depends on [g3log](https://github.com/KjellKod/g3log). Set variable "ENABLE_LOGGING" to be "on" in code/CMakeLists.txt to enable this function.
-* Unit Test depends on [googletest](https://github.com/google/googletest). Set variable "BUILD_TESTS" to be "on" in code/CMakeLists.txt if you want to add and compile test code.
+* Unit test depends on [googletest](https://github.com/google/googletest). Set variable "BUILD_TESTS" to be "on" in code/CMakeLists.txt if you want to add and compile test code.
+* Souce code of depdendent libraries are included in this repository for easier compile configurations. Newer versions will be tested and updated periodically.
 
-Note: The source code and dependent libraries are all cross-platform. It shouldn't be much different to compile and run code on Windows/MacOS. However, since the main development and tests are done under Ubuntu, the documentation assumes this platform is used and only very limited instructions will be provided for other platforms.
+Note: The source code and dependent libraries are all cross-platform. Since the main development and tests are done under Ubuntu, the documentation assumes this platform is used and only limited instructions will be provided for other platforms. But it shouldn't be much different to compile and run code on Windows/MacOS. 
 
 **Install Tools**:
 ```
@@ -69,4 +70,4 @@ An eclipse project will be generated under "build" directory. Import this projec
 ## 4. Run the Simulation
 
 * Start V-REP， open sim_scenes/rc_car_model_c_with_straight_track.ttt，then start the simulation
-* run build/bin/carsim_demo (from Terminal or Eclipse)
+* Run build/bin/carsim_demo (from Terminal or Eclipse)
