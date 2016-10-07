@@ -7,7 +7,7 @@
 
 * This toolbox is licensed under **GPLv3**. Dependent libraries found in the "code/libraries" directory may be distributed with different licenses. Refer to the documents in each library folder for details.
 
-* The simulation was created using the [CAD model](http://www.znczz.com/forum.php?mod=viewthread&tid=237102) provided by "天翊" at ""www.znczz.com".
+* The simulation was created using the [CAD model](http://www.znczz.com/forum.php?mod=viewthread&tid=237102) provided by "天翊".
 
 
 ## 2. Development Environment
