@@ -5,6 +5,9 @@ code/comm/lcmtypes/cpp
 code/comm/lcmtypes/java
 code/comm/lcmtypes/python
 
+# Logs
+/home/rdu/Workspace/smartcar_toolbox/code/control/log/car/*.log
+
 # Compiled Object files
 *.slo
 *.lo
