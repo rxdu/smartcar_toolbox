@@ -1,0 +1,2 @@
+add_executable(rccar_sim_control rccar_sim_control.cpp)
+target_link_libraries(rccar_sim_control rccar_sim)
